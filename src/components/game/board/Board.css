@@ -1,0 +1,20 @@
+:root {
+  --board_border-radius: 0.5rem;
+}
+
+.board {
+  height: 100%;
+  width: 100%;
+
+  & .grid-tiles .grid-tiles-row .grid-tiles-row-cell {
+    overflow: visible;
+  }
+
+  & .board-layer {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+  }
+}

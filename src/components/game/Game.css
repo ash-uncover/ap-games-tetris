@@ -1,0 +1,16 @@
+.image-preview {
+  border: 1px solid black;
+  box-sizing: border-box;
+  top: 0;
+
+  & img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+
+    border-radius: var(--board_border-radius);
+    object-fit: cover;
+  }
+}

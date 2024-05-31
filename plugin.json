@@ -1,0 +1,61 @@
+{
+  "name": "tetris",
+  "url": "http://localhost:8083",
+  "dependencies": [
+    "https://ash-uncover.github.io/ap-games-tetris-themes/plugin.json"
+  ],
+  "defines": {
+    "theme": {
+      "attributes": {
+        "name": "string",
+        "description": "string",
+        "thumbnail?": "url",
+        "background?": "url",
+        "images": "url[]",
+        "music?": "url[]"
+      }
+    }
+  },
+  "provides": {
+    "ap-games/game": {
+      "tetris": {
+        "attributes": {
+          "name": "tetris",
+          "description": "A Tetris game",
+          "thumbnail": "/images/thumbnail.jpg"
+        },
+        "elements": {
+          "main": {
+            "url": "",
+            "type": "iframe"
+          }
+        }
+      }
+    },
+    "tetris/theme": {
+      "default": {
+        "attributes": {
+          "name": "Natural",
+          "description": "Default theme",
+          "thumbnail": "/theme/thumbnail.jpg",
+          "background": "/theme/background.jpg",
+          "images": [
+            "/theme/image_0.jpg",
+            "/theme/image_1.jpg",
+            "/theme/image_2.jpg",
+            "/theme/image_3.jpg",
+            "/theme/image_4.jpg"
+          ],
+          "music": [
+            "/sound/music_0.mp3",
+            "/sound/music_1.mp3",
+            "/sound/music_2.mp3",
+            "/sound/music_3.mp3",
+            "/sound/music_4.mp3",
+            "/sound/music_5.mp3"
+          ]
+        }
+      }
+    }
+  }
+}
